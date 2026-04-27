@@ -33,7 +33,7 @@ The Auth0 Go SDK v2 represents a complete rewrite of the SDK with the following 
 
 ### Module Name Change
 
-The import path has changed from `github.com/auth0/go-auth0` to `github.com/auth0/go-auth0/v2`.
+The import path has changed from `github.com/weirdian2k3/go-auth0` to `github.com/weirdian2k3/go-auth0/v2`.
 
 <table>
 <tr>
@@ -45,8 +45,8 @@ The import path has changed from `github.com/auth0/go-auth0` to `github.com/auth
 
 ```go
 import (
-    "github.com/auth0/go-auth0"
-    "github.com/auth0/go-auth0/management"
+    "github.com/weirdian2k3/go-auth0"
+    "github.com/weirdian2k3/go-auth0/management"
 )
 ```
 
@@ -55,9 +55,9 @@ import (
 
 ```go
 import (
-    "github.com/auth0/go-auth0/v2"
-    "github.com/auth0/go-auth0/v2/management"
-    "github.com/auth0/go-auth0/v2/management/client"
+    "github.com/weirdian2k3/go-auth0/v2"
+    "github.com/weirdian2k3/go-auth0/v2/management"
+    "github.com/weirdian2k3/go-auth0/v2/management/client"
 )
 ```
 
@@ -154,7 +154,7 @@ The way you initialize and access management clients has changed significantly.
 <td>
 
 ```go
-import "github.com/auth0/go-auth0/management"
+import "github.com/weirdian2k3/go-auth0/management"
 
 mgmt, err := management.New(
     domain,
@@ -174,9 +174,9 @@ client, err := mgmt.Client.Create(ctx, clientData)
 
 ```go
 import (
-    "github.com/auth0/go-auth0/v2/management"
-    "github.com/auth0/go-auth0/v2/management/client"
-    "github.com/auth0/go-auth0/v2/management/option"
+    "github.com/weirdian2k3/go-auth0/v2/management"
+    "github.com/weirdian2k3/go-auth0/v2/management/client"
+    "github.com/weirdian2k3/go-auth0/v2/management/option"
 )
 
 mgmt, err := client.New(
@@ -297,10 +297,10 @@ Update your `go.mod` file:
 
 ```bash
 # Remove old dependency
-go mod edit -droprequire github.com/auth0/go-auth0
+go mod edit -droprequire github.com/weirdian2k3/go-auth0
 
 # Add new dependency
-go get github.com/auth0/go-auth0/v2
+go get github.com/weirdian2k3/go-auth0/v2
 ```
 
 ### Step 2: Update Imports
@@ -309,13 +309,13 @@ Replace all imports:
 
 ```go
 // Old
-import "github.com/auth0/go-auth0/management"
+import "github.com/weirdian2k3/go-auth0/management"
 
 // New
 import (
-    "github.com/auth0/go-auth0/v2/management"
-    "github.com/auth0/go-auth0/v2/management/client"
-    "github.com/auth0/go-auth0/v2/option"
+    "github.com/weirdian2k3/go-auth0/v2/management"
+    "github.com/weirdian2k3/go-auth0/v2/management/client"
+    "github.com/weirdian2k3/go-auth0/v2/option"
 )
 ```
 
@@ -374,8 +374,8 @@ package main
 
 import (
     "context"
-    "github.com/auth0/go-auth0"
-    "github.com/auth0/go-auth0/management"
+    "github.com/weirdian2k3/go-auth0"
+    "github.com/weirdian2k3/go-auth0/management"
 )
 
 func main() {
@@ -421,9 +421,9 @@ package main
 
 import (
     "context"
-    "github.com/auth0/go-auth0/v2/management"
-    "github.com/auth0/go-auth0/v2/management/client"
-    "github.com/auth0/go-auth0/v2/option"
+    "github.com/weirdian2k3/go-auth0/v2/management"
+    "github.com/weirdian2k3/go-auth0/v2/management/client"
+    "github.com/weirdian2k3/go-auth0/v2/option"
 )
 
 func main() {
@@ -561,7 +561,7 @@ The authentication package remains largely unchanged between v1 and v2. You can 
 
 ```go
 // Both v1 and v2 support similar authentication patterns
-import "github.com/auth0/go-auth0/v2/authentication"
+import "github.com/weirdian2k3/go-auth0/v2/authentication"
 
 auth, err := authentication.New(
     context.Background(),

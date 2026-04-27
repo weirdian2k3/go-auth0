@@ -14,9 +14,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/auth0/go-auth0/v2/management/core"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/weirdian2k3/go-auth0/v2/management/core"
 )
 
 // InternalTestCase represents a single test case.

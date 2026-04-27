@@ -5,9 +5,10 @@ package management
 import (
 	json "encoding/json"
 	fmt "fmt"
-	internal "github.com/auth0/go-auth0/v2/management/internal"
 	big "math/big"
 	time "time"
+
+	internal "github.com/weirdian2k3/go-auth0/v2/management/internal"
 )
 
 // Represents the metadata of a group. Member lists are retrieved via a separate endpoint.

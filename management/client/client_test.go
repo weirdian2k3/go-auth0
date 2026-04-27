@@ -3,11 +3,12 @@
 package client
 
 import (
-	option "github.com/auth0/go-auth0/v2/management/option"
-	assert "github.com/stretchr/testify/assert"
 	http "net/http"
 	testing "testing"
 	time "time"
+
+	assert "github.com/stretchr/testify/assert"
+	option "github.com/weirdian2k3/go-auth0/v2/management/option"
 )
 
 func TestNewWithOptions(t *testing.T) {

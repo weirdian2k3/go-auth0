@@ -1,4 +1,4 @@
-module github.com/auth0/go-auth0/v2
+module github.com/weirdian2k3/go-auth0/v2
 
 go 1.25.0
 

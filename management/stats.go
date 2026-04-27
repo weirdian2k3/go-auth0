@@ -5,8 +5,9 @@ package management
 import (
 	json "encoding/json"
 	fmt "fmt"
-	internal "github.com/auth0/go-auth0/v2/management/internal"
 	big "math/big"
+
+	internal "github.com/weirdian2k3/go-auth0/v2/management/internal"
 )
 
 var (

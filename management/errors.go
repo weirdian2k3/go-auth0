@@ -4,7 +4,8 @@ package management
 
 import (
 	json "encoding/json"
-	core "github.com/auth0/go-auth0/v2/management/core"
+
+	core "github.com/weirdian2k3/go-auth0/v2/management/core"
 )
 
 // Invalid request URI. The message will vary depending on the cause.

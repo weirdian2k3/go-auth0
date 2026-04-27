@@ -3,7 +3,7 @@ package internal
 import (
 	"context"
 
-	"github.com/auth0/go-auth0/v2/management/core"
+	"github.com/weirdian2k3/go-auth0/v2/management/core"
 )
 
 // PagerMode represents the different types of pagination modes.

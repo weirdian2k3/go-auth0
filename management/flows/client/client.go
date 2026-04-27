@@ -8,12 +8,12 @@ import (
 	http "net/http"
 	strconv "strconv"
 
-	management "github.com/auth0/go-auth0/v2/management"
-	core "github.com/auth0/go-auth0/v2/management/core"
-	executions "github.com/auth0/go-auth0/v2/management/flows/executions"
-	client "github.com/auth0/go-auth0/v2/management/flows/vault/client"
-	internal "github.com/auth0/go-auth0/v2/management/internal"
-	option "github.com/auth0/go-auth0/v2/management/option"
+	management "github.com/weirdian2k3/go-auth0/v2/management"
+	core "github.com/weirdian2k3/go-auth0/v2/management/core"
+	executions "github.com/weirdian2k3/go-auth0/v2/management/flows/executions"
+	client "github.com/weirdian2k3/go-auth0/v2/management/flows/vault/client"
+	internal "github.com/weirdian2k3/go-auth0/v2/management/internal"
+	option "github.com/weirdian2k3/go-auth0/v2/management/option"
 )
 
 type Client struct {

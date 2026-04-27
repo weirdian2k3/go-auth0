@@ -6,16 +6,16 @@ import (
 	context "context"
 	http "net/http"
 
-	management "github.com/auth0/go-auth0/v2/management"
-	core "github.com/auth0/go-auth0/v2/management/core"
-	internal "github.com/auth0/go-auth0/v2/management/internal"
-	option "github.com/auth0/go-auth0/v2/management/option"
-	clientgrants "github.com/auth0/go-auth0/v2/management/organizations/clientgrants"
-	connections "github.com/auth0/go-auth0/v2/management/organizations/connections"
-	discoverydomains "github.com/auth0/go-auth0/v2/management/organizations/discoverydomains"
-	enabledconnections "github.com/auth0/go-auth0/v2/management/organizations/enabledconnections"
-	invitations "github.com/auth0/go-auth0/v2/management/organizations/invitations"
-	client "github.com/auth0/go-auth0/v2/management/organizations/members/client"
+	management "github.com/weirdian2k3/go-auth0/v2/management"
+	core "github.com/weirdian2k3/go-auth0/v2/management/core"
+	internal "github.com/weirdian2k3/go-auth0/v2/management/internal"
+	option "github.com/weirdian2k3/go-auth0/v2/management/option"
+	clientgrants "github.com/weirdian2k3/go-auth0/v2/management/organizations/clientgrants"
+	connections "github.com/weirdian2k3/go-auth0/v2/management/organizations/connections"
+	discoverydomains "github.com/weirdian2k3/go-auth0/v2/management/organizations/discoverydomains"
+	enabledconnections "github.com/weirdian2k3/go-auth0/v2/management/organizations/enabledconnections"
+	invitations "github.com/weirdian2k3/go-auth0/v2/management/organizations/invitations"
+	client "github.com/weirdian2k3/go-auth0/v2/management/organizations/members/client"
 )
 
 type Client struct {

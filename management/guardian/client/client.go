@@ -3,11 +3,11 @@
 package client
 
 import (
-	core "github.com/auth0/go-auth0/v2/management/core"
-	enrollments "github.com/auth0/go-auth0/v2/management/guardian/enrollments"
-	client "github.com/auth0/go-auth0/v2/management/guardian/factors/client"
-	policies "github.com/auth0/go-auth0/v2/management/guardian/policies"
-	internal "github.com/auth0/go-auth0/v2/management/internal"
+	core "github.com/weirdian2k3/go-auth0/v2/management/core"
+	enrollments "github.com/weirdian2k3/go-auth0/v2/management/guardian/enrollments"
+	client "github.com/weirdian2k3/go-auth0/v2/management/guardian/factors/client"
+	policies "github.com/weirdian2k3/go-auth0/v2/management/guardian/policies"
+	internal "github.com/weirdian2k3/go-auth0/v2/management/internal"
 )
 
 type Client struct {

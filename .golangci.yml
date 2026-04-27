@@ -49,7 +49,7 @@ formatters:
       simplify: true
     goimports:
       local-prefixes:
-        - github.com/auth0/go-auth0
+        - github.com/weirdian2k3/go-auth0
   exclusions:
     generated: lax
     paths:

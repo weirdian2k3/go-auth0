@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/auth0/go-auth0/v2/management/core"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/weirdian2k3/go-auth0/v2/management/core"
 )
 
 type RetryTestCase struct {

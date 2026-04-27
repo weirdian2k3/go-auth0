@@ -7,7 +7,7 @@ import (
 	fmt "fmt"
 	big "math/big"
 
-	internal "github.com/auth0/go-auth0/v2/management/internal"
+	internal "github.com/weirdian2k3/go-auth0/v2/management/internal"
 )
 
 var (

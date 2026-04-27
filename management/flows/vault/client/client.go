@@ -3,9 +3,9 @@
 package client
 
 import (
-	core "github.com/auth0/go-auth0/v2/management/core"
-	connections "github.com/auth0/go-auth0/v2/management/flows/vault/connections"
-	internal "github.com/auth0/go-auth0/v2/management/internal"
+	core "github.com/weirdian2k3/go-auth0/v2/management/core"
+	connections "github.com/weirdian2k3/go-auth0/v2/management/flows/vault/connections"
+	internal "github.com/weirdian2k3/go-auth0/v2/management/internal"
 )
 
 type Client struct {

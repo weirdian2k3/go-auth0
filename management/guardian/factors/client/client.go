@@ -5,14 +5,14 @@ package client
 import (
 	context "context"
 
-	management "github.com/auth0/go-auth0/v2/management"
-	core "github.com/auth0/go-auth0/v2/management/core"
-	client "github.com/auth0/go-auth0/v2/management/guardian/factors/duo/client"
-	phone "github.com/auth0/go-auth0/v2/management/guardian/factors/phone"
-	pushnotification "github.com/auth0/go-auth0/v2/management/guardian/factors/pushnotification"
-	sms "github.com/auth0/go-auth0/v2/management/guardian/factors/sms"
-	internal "github.com/auth0/go-auth0/v2/management/internal"
-	option "github.com/auth0/go-auth0/v2/management/option"
+	management "github.com/weirdian2k3/go-auth0/v2/management"
+	core "github.com/weirdian2k3/go-auth0/v2/management/core"
+	client "github.com/weirdian2k3/go-auth0/v2/management/guardian/factors/duo/client"
+	phone "github.com/weirdian2k3/go-auth0/v2/management/guardian/factors/phone"
+	pushnotification "github.com/weirdian2k3/go-auth0/v2/management/guardian/factors/pushnotification"
+	sms "github.com/weirdian2k3/go-auth0/v2/management/guardian/factors/sms"
+	internal "github.com/weirdian2k3/go-auth0/v2/management/internal"
+	option "github.com/weirdian2k3/go-auth0/v2/management/option"
 )
 
 type Client struct {

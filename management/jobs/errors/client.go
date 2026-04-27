@@ -5,10 +5,10 @@ package errors
 import (
 	context "context"
 
-	core "github.com/auth0/go-auth0/v2/management/core"
-	internal "github.com/auth0/go-auth0/v2/management/internal"
-	jobs "github.com/auth0/go-auth0/v2/management/jobs"
-	option "github.com/auth0/go-auth0/v2/management/option"
+	core "github.com/weirdian2k3/go-auth0/v2/management/core"
+	internal "github.com/weirdian2k3/go-auth0/v2/management/internal"
+	jobs "github.com/weirdian2k3/go-auth0/v2/management/jobs"
+	option "github.com/weirdian2k3/go-auth0/v2/management/option"
 )
 
 type Client struct {

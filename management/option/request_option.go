@@ -7,7 +7,7 @@ import (
 	http "net/http"
 	url "net/url"
 
-	core "github.com/auth0/go-auth0/v2/management/core"
+	core "github.com/weirdian2k3/go-auth0/v2/management/core"
 	"golang.org/x/oauth2"
 )
 

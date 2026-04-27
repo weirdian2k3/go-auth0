@@ -3,9 +3,9 @@
 package client
 
 import (
-	blocks "github.com/auth0/go-auth0/v2/management/anomaly/blocks"
-	core "github.com/auth0/go-auth0/v2/management/core"
-	internal "github.com/auth0/go-auth0/v2/management/internal"
+	blocks "github.com/weirdian2k3/go-auth0/v2/management/anomaly/blocks"
+	core "github.com/weirdian2k3/go-auth0/v2/management/core"
+	internal "github.com/weirdian2k3/go-auth0/v2/management/internal"
 )
 
 type Client struct {

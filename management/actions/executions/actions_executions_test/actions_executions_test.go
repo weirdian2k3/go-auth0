@@ -10,9 +10,9 @@ import (
 	os "os"
 	testing "testing"
 
-	client "github.com/auth0/go-auth0/v2/management/client"
-	option "github.com/auth0/go-auth0/v2/management/option"
 	require "github.com/stretchr/testify/require"
+	client "github.com/weirdian2k3/go-auth0/v2/management/client"
+	option "github.com/weirdian2k3/go-auth0/v2/management/option"
 )
 
 func VerifyRequestCount(

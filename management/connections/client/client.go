@@ -6,15 +6,15 @@ import (
 	context "context"
 	http "net/http"
 
-	management "github.com/auth0/go-auth0/v2/management"
-	clients "github.com/auth0/go-auth0/v2/management/connections/clients"
-	client "github.com/auth0/go-auth0/v2/management/connections/directoryprovisioning/client"
-	keys "github.com/auth0/go-auth0/v2/management/connections/keys"
-	scimconfigurationclient "github.com/auth0/go-auth0/v2/management/connections/scimconfiguration/client"
-	users "github.com/auth0/go-auth0/v2/management/connections/users"
-	core "github.com/auth0/go-auth0/v2/management/core"
-	internal "github.com/auth0/go-auth0/v2/management/internal"
-	option "github.com/auth0/go-auth0/v2/management/option"
+	management "github.com/weirdian2k3/go-auth0/v2/management"
+	clients "github.com/weirdian2k3/go-auth0/v2/management/connections/clients"
+	client "github.com/weirdian2k3/go-auth0/v2/management/connections/directoryprovisioning/client"
+	keys "github.com/weirdian2k3/go-auth0/v2/management/connections/keys"
+	scimconfigurationclient "github.com/weirdian2k3/go-auth0/v2/management/connections/scimconfiguration/client"
+	users "github.com/weirdian2k3/go-auth0/v2/management/connections/users"
+	core "github.com/weirdian2k3/go-auth0/v2/management/core"
+	internal "github.com/weirdian2k3/go-auth0/v2/management/internal"
+	option "github.com/weirdian2k3/go-auth0/v2/management/option"
 )
 
 type Client struct {

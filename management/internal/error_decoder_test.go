@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/auth0/go-auth0/v2/management/core"
 	"github.com/stretchr/testify/assert"
+	"github.com/weirdian2k3/go-auth0/v2/management/core"
 )
 
 func TestErrorDecoder(t *testing.T) {

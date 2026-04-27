@@ -6,11 +6,11 @@ import (
 	context "context"
 	http "net/http"
 
-	management "github.com/auth0/go-auth0/v2/management"
-	triggers "github.com/auth0/go-auth0/v2/management/actions/triggers"
-	core "github.com/auth0/go-auth0/v2/management/core"
-	internal "github.com/auth0/go-auth0/v2/management/internal"
-	option "github.com/auth0/go-auth0/v2/management/option"
+	management "github.com/weirdian2k3/go-auth0/v2/management"
+	triggers "github.com/weirdian2k3/go-auth0/v2/management/actions/triggers"
+	core "github.com/weirdian2k3/go-auth0/v2/management/core"
+	internal "github.com/weirdian2k3/go-auth0/v2/management/internal"
+	option "github.com/weirdian2k3/go-auth0/v2/management/option"
 )
 
 type RawClient struct {
