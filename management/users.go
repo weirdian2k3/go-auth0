@@ -2286,7 +2286,7 @@ func (u *UserResponseSchema) UnmarshalJSON(data []byte) error {
 		default:
 			panic(reflect.TypeOf(rawEmailVerified))
 		}
-		c.EmailVerified = &emailVerified
+		u.EmailVerified = &emailVerified
 	}
 	return nil
 }
