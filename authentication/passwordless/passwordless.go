@@ -22,7 +22,7 @@ type SendEmailResponse struct {
 	// The user's email address.
 	Email string `json:"email,omitempty"`
 	// Whether the user's email address is verified.
-	EmailVerified bool `json:"email_verified,string,omitempty"`
+	EmailVerified bool `json:"email_verified,omitempty"`
 }
 
 // LoginWithEmailRequest defines the request body for exchanging a code requested by `SendEmail` for a token.

@@ -884,7 +884,7 @@ type CreateUserRequestContent struct {
 	// Whether this user was blocked by an administrator (true) or not (false).
 	Blocked *bool `json:"blocked,omitempty" url:"-"`
 	// Whether this email address is verified (true) or unverified (false). User will receive a verification email after creation if `email_verified` is false or not specified
-	EmailVerified *bool `json:"email_verified,string,omitempty" url:"-"`
+	EmailVerified *bool `json:"email_verified,omitempty" url:"-"`
 	// Whether this phone number has been verified (true) or not (false).
 	PhoneVerified *bool        `json:"phone_verified,omitempty" url:"-"`
 	AppMetadata   *AppMetadata `json:"app_metadata,omitempty" url:"-"`
@@ -13421,7 +13421,7 @@ type UpdateUserRequestContent struct {
 	// Whether this user was blocked by an administrator (true) or not (false).
 	Blocked *bool `json:"blocked,omitempty" url:"-"`
 	// Whether this email address is verified (true) or unverified (false). If set to false the user will not receive a verification email unless `verify_email` is set to true.
-	EmailVerified *bool `json:"email_verified,string,omitempty" url:"-"`
+	EmailVerified *bool `json:"email_verified,omitempty" url:"-"`
 	// Email address of this user.
 	Email *string `json:"email,omitempty" url:"-"`
 	// The user's phone number (following the E.164 recommendation).

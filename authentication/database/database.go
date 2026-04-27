@@ -43,7 +43,7 @@ type SignupResponse struct {
 	// The user's email address.
 	Email string `json:"email,omitempty"`
 	// Indicates whether a user has verified their email address.
-	EmailVerified bool `json:"email_verified,string,omitempty"`
+	EmailVerified bool `json:"email_verified,omitempty"`
 	// The user's ID.
 	ID string `json:"_id,omitempty"`
 	// The user's phone number.

@@ -6,6 +6,8 @@ import (
 	json "encoding/json"
 	fmt "fmt"
 	big "math/big"
+	"reflect"
+	"strconv"
 
 	internal "github.com/weirdian2k3/go-auth0/v2/management/internal"
 )
@@ -40,7 +42,7 @@ type CreateUserResponseContent struct {
 	// Email address of this user.
 	Email *string `json:"email,omitempty" url:"email,omitempty"`
 	// Whether this email address is verified (true) or unverified (false).
-	EmailVerified *bool `json:"email_verified,string,omitempty" url:"email_verified,omitempty"`
+	EmailVerified *bool `json:"email_verified,omitempty" url:"email_verified,omitempty"`
 	// Username of this user.
 	Username *string `json:"username,omitempty" url:"username,omitempty"`
 	// Phone number for this user. Follows the <a href="https://en.wikipedia.org/wiki/E.164">E.164 recommendation</a>.
@@ -393,6 +395,7 @@ func (c *CreateUserResponseContent) UnmarshalJSON(data []byte) error {
 	type embed CreateUserResponseContent
 	var unmarshaler = struct {
 		embed
+		RawEmailVerified interface{} `json:"email_verified,omitempty"`
 	}{
 		embed: embed(*c),
 	}
@@ -406,6 +409,23 @@ func (c *CreateUserResponseContent) UnmarshalJSON(data []byte) error {
 	}
 	c.ExtraProperties = extraProperties
 	c.rawJSON = json.RawMessage(data)
+
+	if unmarshaler.RawEmailVerified != nil {
+		var emailVerified bool
+		switch rawEmailVerified := unmarshaler.RawEmailVerified.(type) {
+		case bool:
+			emailVerified = rawEmailVerified
+		case string:
+			emailVerified, err = strconv.ParseBool(rawEmailVerified)
+			if err != nil {
+				return err
+			}
+		default:
+			panic(reflect.TypeOf(rawEmailVerified))
+		}
+		c.EmailVerified = &emailVerified
+	}
+
 	return nil
 }
 
@@ -465,7 +485,7 @@ type GetUserResponseContent struct {
 	// Email address of this user.
 	Email *string `json:"email,omitempty" url:"email,omitempty"`
 	// Whether this email address is verified (true) or unverified (false).
-	EmailVerified *bool `json:"email_verified,string,omitempty" url:"email_verified,omitempty"`
+	EmailVerified *bool `json:"email_verified,omitempty" url:"email_verified,omitempty"`
 	// Username of this user.
 	Username *string `json:"username,omitempty" url:"username,omitempty"`
 	// Phone number for this user. Follows the <a href="https://en.wikipedia.org/wiki/E.164">E.164 recommendation</a>.
@@ -818,6 +838,7 @@ func (g *GetUserResponseContent) UnmarshalJSON(data []byte) error {
 	type embed GetUserResponseContent
 	var unmarshaler = struct {
 		embed
+		RawEmailVerified interface{} `json:"email_verified,omitempty"`
 	}{
 		embed: embed(*g),
 	}
@@ -831,6 +852,22 @@ func (g *GetUserResponseContent) UnmarshalJSON(data []byte) error {
 	}
 	g.ExtraProperties = extraProperties
 	g.rawJSON = json.RawMessage(data)
+
+	if unmarshaler.RawEmailVerified != nil {
+		var emailVerified bool
+		switch rawEmailVerified := unmarshaler.RawEmailVerified.(type) {
+		case bool:
+			emailVerified = rawEmailVerified
+		case string:
+			emailVerified, err = strconv.ParseBool(rawEmailVerified)
+			if err != nil {
+				return err
+			}
+		default:
+			panic(reflect.TypeOf(rawEmailVerified))
+		}
+		g.EmailVerified = &emailVerified
+	}
 	return nil
 }
 
@@ -1154,7 +1191,7 @@ type UpdateUserResponseContent struct {
 	// Email address of this user.
 	Email *string `json:"email,omitempty" url:"email,omitempty"`
 	// Whether this email address is verified (true) or unverified (false).
-	EmailVerified *bool `json:"email_verified,string,omitempty" url:"email_verified,omitempty"`
+	EmailVerified *bool `json:"email_verified,omitempty" url:"email_verified,omitempty"`
 	// Username of this user.
 	Username *string `json:"username,omitempty" url:"username,omitempty"`
 	// Phone number for this user. Follows the <a href="https://en.wikipedia.org/wiki/E.164">E.164 recommendation</a>.
@@ -1507,6 +1544,7 @@ func (u *UpdateUserResponseContent) UnmarshalJSON(data []byte) error {
 	type embed UpdateUserResponseContent
 	var unmarshaler = struct {
 		embed
+		RawEmailVerified interface{} `json:"email_verified,omitempty"`
 	}{
 		embed: embed(*u),
 	}
@@ -1520,6 +1558,22 @@ func (u *UpdateUserResponseContent) UnmarshalJSON(data []byte) error {
 	}
 	u.ExtraProperties = extraProperties
 	u.rawJSON = json.RawMessage(data)
+
+	if unmarshaler.RawEmailVerified != nil {
+		var emailVerified bool
+		switch rawEmailVerified := unmarshaler.RawEmailVerified.(type) {
+		case bool:
+			emailVerified = rawEmailVerified
+		case string:
+			emailVerified, err = strconv.ParseBool(rawEmailVerified)
+			if err != nil {
+				return err
+			}
+		default:
+			panic(reflect.TypeOf(rawEmailVerified))
+		}
+		u.EmailVerified = &emailVerified
+	}
 	return nil
 }
 
@@ -1851,7 +1905,7 @@ type UserResponseSchema struct {
 	// Email address of this user.
 	Email *string `json:"email,omitempty" url:"email,omitempty"`
 	// Whether this email address is verified (true) or unverified (false).
-	EmailVerified *bool `json:"email_verified,string,omitempty" url:"email_verified,omitempty"`
+	EmailVerified *bool `json:"email_verified,omitempty" url:"email_verified,omitempty"`
 	// Username of this user.
 	Username *string `json:"username,omitempty" url:"username,omitempty"`
 	// Phone number for this user. Follows the <a href="https://en.wikipedia.org/wiki/E.164">E.164 recommendation</a>.
@@ -2204,6 +2258,7 @@ func (u *UserResponseSchema) UnmarshalJSON(data []byte) error {
 	type embed UserResponseSchema
 	var unmarshaler = struct {
 		embed
+		RawEmailVerified interface{} `json:"email_verified,omitempty"`
 	}{
 		embed: embed(*u),
 	}
@@ -2217,6 +2272,22 @@ func (u *UserResponseSchema) UnmarshalJSON(data []byte) error {
 	}
 	u.ExtraProperties = extraProperties
 	u.rawJSON = json.RawMessage(data)
+
+	if unmarshaler.RawEmailVerified != nil {
+		var emailVerified bool
+		switch rawEmailVerified := unmarshaler.RawEmailVerified.(type) {
+		case bool:
+			emailVerified = rawEmailVerified
+		case string:
+			emailVerified, err = strconv.ParseBool(rawEmailVerified)
+			if err != nil {
+				return err
+			}
+		default:
+			panic(reflect.TypeOf(rawEmailVerified))
+		}
+		c.EmailVerified = &emailVerified
+	}
 	return nil
 }
 
