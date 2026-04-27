@@ -5,8 +5,9 @@ package management
 import (
 	json "encoding/json"
 	fmt "fmt"
-	internal "github.com/auth0/go-auth0/v2/management/internal"
 	big "math/big"
+
+	internal "github.com/auth0/go-auth0/v2/management/internal"
 )
 
 var (
@@ -39,7 +40,7 @@ type CreateUserResponseContent struct {
 	// Email address of this user.
 	Email *string `json:"email,omitempty" url:"email,omitempty"`
 	// Whether this email address is verified (true) or unverified (false).
-	EmailVerified *bool `json:"email_verified,omitempty" url:"email_verified,omitempty"`
+	EmailVerified *bool `json:"email_verified,string,omitempty" url:"email_verified,omitempty"`
 	// Username of this user.
 	Username *string `json:"username,omitempty" url:"username,omitempty"`
 	// Phone number for this user. Follows the <a href="https://en.wikipedia.org/wiki/E.164">E.164 recommendation</a>.
@@ -464,7 +465,7 @@ type GetUserResponseContent struct {
 	// Email address of this user.
 	Email *string `json:"email,omitempty" url:"email,omitempty"`
 	// Whether this email address is verified (true) or unverified (false).
-	EmailVerified *bool `json:"email_verified,omitempty" url:"email_verified,omitempty"`
+	EmailVerified *bool `json:"email_verified,string,omitempty" url:"email_verified,omitempty"`
 	// Username of this user.
 	Username *string `json:"username,omitempty" url:"username,omitempty"`
 	// Phone number for this user. Follows the <a href="https://en.wikipedia.org/wiki/E.164">E.164 recommendation</a>.
@@ -1153,7 +1154,7 @@ type UpdateUserResponseContent struct {
 	// Email address of this user.
 	Email *string `json:"email,omitempty" url:"email,omitempty"`
 	// Whether this email address is verified (true) or unverified (false).
-	EmailVerified *bool `json:"email_verified,omitempty" url:"email_verified,omitempty"`
+	EmailVerified *bool `json:"email_verified,string,omitempty" url:"email_verified,omitempty"`
 	// Username of this user.
 	Username *string `json:"username,omitempty" url:"username,omitempty"`
 	// Phone number for this user. Follows the <a href="https://en.wikipedia.org/wiki/E.164">E.164 recommendation</a>.
@@ -1850,7 +1851,7 @@ type UserResponseSchema struct {
 	// Email address of this user.
 	Email *string `json:"email,omitempty" url:"email,omitempty"`
 	// Whether this email address is verified (true) or unverified (false).
-	EmailVerified *bool `json:"email_verified,omitempty" url:"email_verified,omitempty"`
+	EmailVerified *bool `json:"email_verified,string,omitempty" url:"email_verified,omitempty"`
 	// Username of this user.
 	Username *string `json:"username,omitempty" url:"username,omitempty"`
 	// Phone number for this user. Follows the <a href="https://en.wikipedia.org/wiki/E.164">E.164 recommendation</a>.

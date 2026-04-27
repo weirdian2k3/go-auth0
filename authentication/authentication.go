@@ -26,7 +26,7 @@ type UserInfoResponse struct {
 	// The user's preferred email address.
 	Email string `json:"email,omitempty"`
 	// Whether the user's email address has been verified or not.
-	EmailVerified bool `json:"email_verified,omitempty"`
+	EmailVerified bool `json:"email_verified,string,omitempty"`
 	// Surname(s) or last name(s) of the user.
 	FamilyName string `json:"family_name,omitempty"`
 	// The user's gender.

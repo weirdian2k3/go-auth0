@@ -5,9 +5,10 @@ package management
 import (
 	json "encoding/json"
 	fmt "fmt"
-	internal "github.com/auth0/go-auth0/v2/management/internal"
 	big "math/big"
 	time "time"
+
+	internal "github.com/auth0/go-auth0/v2/management/internal"
 )
 
 var (
@@ -127645,7 +127646,7 @@ type UserProfileData struct {
 	// Email address of this user.
 	Email *string `json:"email,omitempty" url:"email,omitempty"`
 	// Whether this email address is verified (true) or unverified (false).
-	EmailVerified *bool `json:"email_verified,omitempty" url:"email_verified,omitempty"`
+	EmailVerified *bool `json:"email_verified,string,omitempty" url:"email_verified,omitempty"`
 	// Name of this user.
 	Name *string `json:"name,omitempty" url:"name,omitempty"`
 	// Username of this user.
